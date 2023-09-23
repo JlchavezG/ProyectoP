@@ -1,11 +1,65 @@
-<mxfile host="app.diagrams.net" modified="2023-09-23T18:43:55.553Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="lJ7DmGlMKU_Ky-hgITBM" version="21.6.2" type="github">
-  <diagram name="Página-1" id="cVkjtcBAUF7eC8NxDQug">
-    <mxGraphModel dx="1434" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2023-09-23T18:53:04.892Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="wTdAD4syYrApeAkkkEd3" version="21.6.2" type="github">
+  <diagram name="Simbolos_ER" id="cVkjtcBAUF7eC8NxDQug">
+    <mxGraphModel dx="819" dy="421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="m02qpI_CYT4nxHyqX9F4-1" value="Usuario" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="170" y="360" width="100" height="40" as="geometry" />
+          <mxGeometry x="70" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-2" value="Entidad Fuerte" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="128" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-3" value="Entity" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="190" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-5" value="Entidad Debil" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="200" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-6" value="Associative&#xa;Entity" style="shape=associativeEntity;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-7" value="Entidades Asociativas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="290" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-8" value="Relationship" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-9" value="Relacion Debil" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="450" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-10" value="Relationship" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-11" value="Relacion" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="368" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-12" value="Attribute" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="390" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-13" value="Atributo Simple" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-15" value="Attribute" style="ellipse;shape=doubleEllipse;margin=3;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="390" y="250" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-16" value="Atributo Multivalorado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="255" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-17" value="Attribute" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-18" value="Atributo derivado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="505" y="345" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-19" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="sourcePoint" />
+            <mxPoint x="560" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m02qpI_CYT4nxHyqX9F4-20" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="m02qpI_CYT4nxHyqX9F4-19">
+          <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
