@@ -56,6 +56,16 @@
             document.querySelector(".iva").innerText=(suma*.16).toFixed(2);
             document.querySelector(".total").innerText=((suma*.16)+suma).toFixed(2);
         }
+        // funcion para revisar si hay nueva fila 
+        function nuevaFila(){
+            const tr=document.querySelectorAll("tr");
+            const ultimaFila=tr[tr.length-2];
+            const vacio=[...ultimaFila.querySelectorAll("input")].every(fl =>fl.value=="");
+            if(vacio==false){
+                ultimaFila.insertAdjacentElement('afterend',createTr());
+                newEvents();
+            }
+        }
 
     </script>
 </body>
