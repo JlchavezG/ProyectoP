@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/carrito.js"></script>
     <title>Carrito de Compra</title>
 </head>
 <body>
@@ -65,6 +66,35 @@
                 ultimaFila.insertAdjacentElement('afterend',createTr());
                 newEvents();
             }
+        }
+        // crear la funcion de nueva fila dentro de la tabla 
+        function crearTr(){
+            const td1 = document.createElement("td");
+            const input1 = document.createElement("input");
+            input1.type = "text";
+            td1.appendChild(input1);
+
+            const td2 = document.createElement("td");
+            const input2 = document.createElement("input");
+            input2.type="number";
+            td2.appendChild(input2);
+
+            const td3 = document.createElement("td");
+            const input3 = document.createElement("input");
+            input3.type="number";
+            td3.appendChild(input3);
+
+            const td4 = document.createElement("td");
+            td4.classList.add("subtotal");
+            td4.innerHTML="0.00";
+
+            const tr=document.createElement("tr");
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tr.appendChild(td4);
+
+            return tr;
         }
 
     </script>
