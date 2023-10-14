@@ -39,4 +39,5 @@ function deleteProductos(e){
 
  }
 }   
+// eventos de calculo 
 }
