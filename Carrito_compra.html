@@ -37,13 +37,13 @@
         /**
          * Funcion que crea los eventos necesarios
          */
-        const setEvents = () => {
-            document.querySelectorAll("input").forEach(el => {
-                el.removeEventListener("keyup", calcularFila);
-                el.addEventListener("keyup", calcularFila);
+        const newEvents = () => {
+            document.querySelectorAll("input").forEach(fl => {
+                fl.removeEventListener("keyup", calcularFila);
+                fl.addEventListener("keyup", calcularFila);
             });
         };
-        setEvents();
+        newEvents();
 
         /**
          * Funcion para calcular el subtotal de la fila
@@ -54,15 +54,15 @@
             const num = tr.querySelectorAll("input[type=number]");
             tr.querySelector(".subtotal").innerText = (parseFloat(num[0].value) * parseFloat(num[1].value) || 0).toFixed(2);
 
-            calcularTotal();
+            calcularAll();
             agregarFila();
         }
 
         /**
          * Funcion que calcula el total
          */
-        function calcularTotal() {
-            const suma = [...document.querySelectorAll(".subtotal")].reduce((acum, el) => acum + parseFloat(el.innerText), 0);
+        function calcularAll() {
+            const suma = [...document.querySelectorAll(".subtotal")].reduce((acum, fl) => acum + parseFloat(fl.innerText), 0);
             document.querySelector(".base").innerText = suma.toFixed(2);
             document.querySelector(".iva").innerText = (suma * .16).toFixed(2);
             document.querySelector(".total").innerText = ((suma * .16) + suma).toFixed(2);
@@ -79,7 +79,7 @@
             // la ultima fila contiene el total, y nosotros queremos al anterior a la del total
             const ultimaFila = tr[tr.length - 2];
             // comprovamos si la ultima fila esta vacia
-            const vacio = [...ultimaFila.querySelectorAll("input")].every(el => el.value == "");
+            const vacio = [...ultimaFila.querySelectorAll("input")].every(fl => fl.value == "");
             if (vacio == false) {
                 ultimaFila.insertAdjacentElement('afterend', createTr());
                 setEvents();
